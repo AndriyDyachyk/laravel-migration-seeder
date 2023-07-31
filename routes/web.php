@@ -15,4 +15,7 @@ use App\Http\Controllers\TrainsController as TrainsController;
 */
 
 Route::get('/', [TrainsController::class, 'index']
-);
+)->name('home');
+
+Route::get('/filtrato', [TrainsController::class, 'filtrato']
+)->name('filtrato');
